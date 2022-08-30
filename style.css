@@ -1,0 +1,93 @@
+body{
+    margin: 20px;
+    padding: 0px;
+    background-color: rgb(228, 228, 228);
+}
+
+h1{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-books{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card-book{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+.card-book:hover{
+    background-color: white;
+    transition: .3s ease-in-out;
+}
+
+.card-img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.h1-name{
+    margin-top: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: right;
+}
+
+.h1-btn{
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 155px;
+    transition: .3s ease-in-out;
+}   
+
+.h1-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+
+@media screen and (max-width: 1400px){
+    .container-books{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .container-books{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container-books{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
